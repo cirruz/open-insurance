@@ -1,0 +1,23 @@
+sequenceDiagram
+    participant consumer as API Consumer
+    participant customer as Customer API
+    participant insurer as Insurer Backend
+    participant integration as Industri and Goverment APIs
+    consumer->>integration : Get access token via oidc
+    consumer->>customer : Get accounts
+    consumer->>customer : Grant or revoke account permissions
+    consumer->>customer : Get agreement
+    customer->>insurer : Get agreement
+    consumer->>customer : Get documents
+    customer->>insurer : Get documents
+    consumer->>customer : Get payments
+    customer->>insurer : Get payments
+    consumer->>customer : Make payments
+    customer->>insurer : Make payments
+    consumer->>customer : Create cases
+    customer->>insurer : Create cases
+    consumer->>customer : Search cases
+    customer->>insurer : Search cases
+    consumer->>customer : Update cases
+    customer->>insurer : Update cases
+
