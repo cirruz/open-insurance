@@ -14,6 +14,8 @@ The open insurance api specification in the sky.
 * Integrate to *National Goverment and Industry APIs*. 
 * Comply with national customer regulations.
 
+![Sales Sequence Diagram](sales-api/sales-sequence.png "Sales Sequence Diagram")
+
 # Customer API
 * Create a quote account.
 * Get customer agreements and documents.
