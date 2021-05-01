@@ -1,0 +1,16 @@
+sequenceDiagram
+    participant consumer as API Consumer
+    participant sales as Sales API
+    participant customer as Customer API
+    participant insurer as Insurer Backend
+    participant integration as Goverment and Industri API
+    consumer->>sales : Get price
+    sales->>insurer : Get price
+    consumer->>sales : Create quote for customer
+    sales->>integration : Assess customer 
+    sales->>insurer : Create price quote 
+    sales->>customer : Create quote account
+    customer->>insurer : Notify customer
+    consumer->>sales : Accept created quote 
+    consumer->>sales : Sign created quote
+    consumer->>sales : activate created quote 
