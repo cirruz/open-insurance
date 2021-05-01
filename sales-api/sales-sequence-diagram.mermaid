@@ -1,17 +1,17 @@
-# https://mermaid-js.github.io/mermaid-live-editor
 sequenceDiagram
     participant consumer as API Consumer
     participant sales as Sales API
     participant customer as Customer API
     participant insurer as Insurer Backend
-    participant integration as Goverment and Industri API
-    consumer->>sales : Get price
+    participant integration as Industri and Goverment APIs
+    consumer->>integration : Search addresses or vehicles
+    consumer->>sales : Get price for product
     sales->>insurer : Get price
+    consumer->>integration : Search persons or organizations
     consumer->>sales : Create quote for customer
     sales->>integration : Assess customer 
-    sales->>insurer : Create price quote 
     sales->>customer : Create quote account
-    customer->>insurer : Notify customer
+    customer->>insurer : Create price/quote  & notify customer
     consumer->>sales : Accept created quote 
-    consumer->>sales : Sign created quote
-    consumer->>sales : activate created quote 
+    consumer->>integration : Sign created quote
+    consumer->>sales : Activate created quote 
