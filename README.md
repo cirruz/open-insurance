@@ -15,10 +15,10 @@ The open insurance api specification in the sky.
 * Comply with national customer regulations.
 
 # Customer API
-* Create quote a account.
+* Create a quote account.
 * Get customer agreements and documents.
 * Create a payment agreement.
-* Merge a quote account with exsisting accounts
+* Merge a quote account with an exsisting account.
 * Grant and revoke accounts access to
   * other personal parties like relatives
   * staff or 3. party organizational like insurance partners, brokers 
