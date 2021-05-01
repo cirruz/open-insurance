@@ -13,5 +13,9 @@ sequenceDiagram
     sales->>customer : Create quote account
     customer->>insurer : Create price/quote  & notify customer
     consumer->>sales : Accept created quote 
+    sales->>integration : create signature order & notify customer 
     consumer->>integration : Sign created quote
     consumer->>sales : Activate created quote 
+    sales->>customer : Create agreement 
+    customer->>insurer  : Create agreement
+
