@@ -24,3 +24,5 @@ The open insurance api specification in the sky.
 * Grant and revoke accounts access to
   * other personal parties like relatives
   * staff or 3. party organizational like insurance partners, brokers 
+
+![Customer Sequence Diagram](customer-api/customer-sequence.png "Customer Sequence Diagram")
